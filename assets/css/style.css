@@ -1,0 +1,546 @@
+@import url('https://fonts.googleapis.com/css2?family=Anonymous+Pro:ital,wght@0,400;0,700;1,400;1,700&family=Audiowide&family=Black+Ops+One&family=Chakra+Petch:wght@300;400;500;600;700&family=Courgette&family=Electrolize&family=Hahmlet:wght@100;200;400;500;600;700;800&family=Orbitron:wght@400;500;600;700;800;900&family=Poppins:wght@200;300;400;500;600;700;800;900&family=Press+Start+2P&family=Roboto+Serif:wght@100;200;300;400;500;600;700;800;900&family=Rubik:wght@300;400;500;600;700;800&family=Skranji:wght@400;700&display=swap');
+/*
+font-family: 'Anonymous Pro', monospace;
+font-family: 'Audiowide', cursive;
+font-family: 'Black Ops One', cursive;
+font-family: 'Chakra Petch', sans-serif;
+font-family: 'Courgette', cursive;
+font-family: 'Electrolize', sans-serif;
+font-family: 'Hahmlet', serif;
+font-family: 'Orbitron', sans-serif;
+font-family: 'Poppins', sans-serif;
+font-family: 'Press Start 2P', cursive;
+font-family: 'Roboto Serif', sans-serif;
+font-family: 'Rubik', sans-serif;
+font-family: 'Skranji', cursive;
+#a3cb3a
+*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    font-family: 'Poppins',sans-serif;
+}
+.container {
+    width: auto;
+    height: auto;
+}
+.navigation {
+    position: relative;
+    width: 85%;
+    height: 140px;
+    z-index: 10;
+    /*border: 1px solid black;*/
+}
+.navigation nav ul {
+    position: relative;
+    float: left;
+    left: 4%;
+    /*border: 1px solid black;*/
+}
+.navigation nav ul li {
+    margin: 3.5pc;
+    list-style-type: none;
+    display: inline-block;
+}
+.navigation nav ul li a {
+    color: #000000;
+    transition: .3s;
+    letter-spacing: .7px;
+    text-decoration: none;
+}
+.navigation nav ul li a:hover {
+    color: #a3cb3a;
+}
+.about {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 700px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: row;
+    /*border: 1px solid black;*/
+}
+.about-left,
+.about-right {
+    width: 43%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    /*border: 1px solid black;*/
+}
+.about-left h1 {
+    font-size: 2.5pc;
+    font-weight: 550;
+}
+.about-left p {
+    width: 85%;
+    font-size: 16px;
+}
+.about-left p:nth-child(3),
+.about-left a {
+    margin-top: 15px;
+}
+.about-left a {
+    color: #ffffff;
+    padding: 8px 25px;
+    background: #a3cb3a;
+    border-radius: 5px;
+    font-size: 15px;
+    letter-spacing: .4px;
+    text-decoration: none;
+    transition: .3s;
+}
+.about-left a:hover {
+    background: #8baa3c;
+}
+.duplicate {
+    position: absolute;
+    top: 0;
+    right: 16%;
+    width: 20%;
+    height: 66%;
+    background: #a3cb3a;
+}
+.about-right img {
+    position: absolute;
+    width: 390px;
+    height: auto;
+    z-index: 5;
+    right: 4%;
+    bottom: 19%;
+}
+.main-hustle {
+    position: relative;
+    top: 12cm;
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+.hustle-one,
+.hustle-three {
+    width: 25%;
+    height: 100%;
+}
+.hustle-three {
+    width: 20%;
+}
+.hustle-two {
+    width: 55%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.hustle-box {
+    width: 68%;
+    height: auto;
+    padding-top: 5px;
+}
+.hustle-box h2 {
+    font-weight: 550;
+    color: #a3cb3a;
+}
+.hustle-box h4 {
+    font-weight: 550;
+    letter-spacing: .4px;
+}
+.hustle-box p {
+    font-size: 15px;
+}
+.hustle-box h4,
+.hustle-box p {
+    margin-top: 5px;
+}
+.hustle-one img {
+    width: 85%;
+    height: auto;
+}
+.hustle-one h1 {
+    position: relative;
+    right: 55%;
+    width: 10%;
+    float: right;
+    letter-spacing: 1px;
+    font-weight: 600;
+    font-size: 4.5pc;
+    line-height: 4.7pc;
+}
+.work {
+    position: relative;
+    top: 14cm;
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.work h1 {
+    font-size: 3pc;
+    font-weight: 550;
+}
+.work p {
+    width: 50%;
+    text-align: center;
+}
+.work h1,
+.work p {
+    padding-bottom: 4pc;
+}
+.projects {
+    width: 80%;
+    height: auto;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+.band {
+    position: relative;
+    width: 30px;
+    height: 45px;
+    left: 10px;
+    bottom: -30px;
+    z-index: 9;
+    background: #a3cb3a;
+}
+.projects-box {
+    position: relative;
+    width: 25%;
+    height: 300px;
+    margin: 15px;
+}
+.projects-image {
+    position: absolute;
+    top: 0;
+    z-index: 4;
+    top: 0;
+}
+.projects-box h4 {
+    font-weight: 550;
+    margin-bottom: 5px;
+}
+.projects-box h5 {
+    width: 80%;
+    font-weight: 500;
+    margin-bottom: 5px;
+}
+.projects-box a {
+    color: #a3cb3a;
+    font-weight: 500;
+    transition: .3s;
+    text-decoration: none;
+}
+.projects-box a:hover {
+    color: #8baa3c;
+}
+.achievements {
+    position: relative;
+    top: 15cm;
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+}
+.achieves-box-one {
+    width: 60%;
+}
+.achieves-box-two {
+    width: 30%;
+}
+.achieves-box-one,
+.achieves-box-two {
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.achieves {
+    width: 50%;
+    height: 200px;
+    padding: 50px;
+}
+hr {
+    width: 10%;
+    border: 2px solid #a3cb3a;
+}
+.achieves p {
+    width: 85%;
+    font-size: 15px;
+}
+.achieves-box-two {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+.achieves-box-two-min {
+    width: 100%;
+    height: 350px;
+    font-size: 2.4pc;
+    color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #a3cb3a;
+}
+.achieves-box-two-min h1 {
+    position: relative;
+    width: 70%;
+    line-height: 5pc;
+}
+.hobbies,
+.contact {
+    position: relative;
+    top: 15cm;
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: row;
+}
+.hobbies-left,
+.hobbies-right {
+    width: 40%;
+    height: 760px;
+}
+.hobbies-left {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.hobbies-left h1 {
+    color: #a3cb3a;
+    font-size: 4.5pc;
+    width: 40%;
+    font-weight: 600;
+    line-height: 5.5pc;
+}
+.hobbies-left p {
+    width: 59%;
+}
+.hobbies-right {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.hobbies-right img {
+    width: 45%;
+    height: auto;
+    margin: 0;
+}
+.contact {
+    height: 250px;
+}
+.contact-left {
+    width: 30%;
+    height: 100%;
+    flex-direction: column;
+    background: #a3cb3a;
+}
+.contact-left span,
+.contact-left {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.contact-left h1 {
+    font-size: 2.5pc;
+    font-weight: 600;
+    color: #ffffff;
+}
+.contact-left p {
+    color: #ffffff;
+}
+.contact-left span {
+    flex-direction: row;
+}
+.contact-left span img {
+    width: 20px;
+    height: auto;
+    margin: 5px;
+}
+.contact-right {
+    height: 100%;
+    width: 70%;
+}
+.contact-right p {
+    position: absolute;
+    right: 50px;
+    bottom: 50px;
+}
+@media only screen and (max-width:1123px) {
+    .navigation {
+        width: 100%;
+        height: auto;
+    }
+    .navigation nav ul {
+        width: 100%;
+        height: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        margin-top: 20px;
+        background: #ffffff;
+    }
+    .navigation nav ul li {
+        font-size: 17px;
+        margin: 5px;
+        display: block;
+        text-align: center;
+    }
+    .about {
+        position: relative;
+        flex-direction: column;
+    }
+    .about-left,
+    .about-right {
+        width: 100%;
+        text-align: center;
+    }
+    .duplicate {
+        display: none;
+    }
+    .about-left h1 {
+        font-size: 2pc;
+    }
+    .about-left p {
+        width: 90%;
+        font-size: 12px;
+    }
+    .about-right,
+    .about-left {
+        display: flex;
+        justify-content: center;
+    }
+    .about-left {
+        align-items: center;
+    }
+    .about-right img {
+        width: 90%;
+        height: auto;
+        bottom: 0;
+    }
+    .main-hustle {
+        top: 0;
+        flex-direction: column;
+    }
+    .hustle-one,
+    .hustle-two {
+        width: 100%;
+    }
+    .hustle-three {
+        display: none;
+    }
+    .hustle-one img {
+        width: 100%;
+    }
+    .hustle-one h1 {
+        position: absolute;
+        top: 15%;
+        width: 100%;
+        right: 0;
+        font-size: 2pc;
+        text-align: center;
+    }
+    .hustle-box {
+        width: 95%;
+    }
+    .work,
+    .achievements,
+    .hobbies,
+    .contact {
+        top: 0;
+    }
+    .work h1 {
+        font-size: 2pc;
+        margin-top: 30px;
+    }
+    .work h1,
+    .work p {
+        width: 90%;
+        text-align: center;
+        padding: 10px 0;
+    }
+    .projects {
+        width: 100%;
+        align-items: center;
+        flex-direction: column;
+    }
+    .projects-box {
+        width: 90%;
+    }
+    .achievements {
+        flex-direction: column-reverse;
+    }
+    .achieves-box-one,
+    .achieves-box-two {
+        width: 100%;
+    }
+    .achieves-box-two h1 {
+        width: 100%;
+        font-size: 2pc;
+        text-align: center;
+    }
+    .achieves-box-one {
+        flex-direction: column-reverse;
+    }
+    .achieves {
+        width: 80%;
+        height: 120px;
+        padding: 0;
+    }
+    .achieves p {
+        width: 100%;
+    }
+    .hobbies {
+        flex-direction: column;
+    }
+    .hobbies-left,
+    .hobbies-right {
+        width: 100%;
+        height: auto;
+    }
+    .hobbies-left h1,
+    .hobbies-left p {
+        width: 100%;
+        text-align: center;
+    }
+    .hobbies-left h1 {
+        font-size: 2pc;
+    }
+    .hobbies-right img {
+        width: 80%;
+        height: auto;
+    }
+    .contact {
+        flex-direction: column;
+    }
+    .contact-left,
+    .contact-right {
+        width: 100%;
+        height: auto;
+    }
+    .contact-right p {
+        position: relative;
+        bottom: 0;
+        right: 0;
+        text-align: center;
+    }
+}
